@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap");
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 30px 50px 30px;
+  grid-template-columns: 1fr;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+a,
+a:visited {
+  color: #333333;
+}

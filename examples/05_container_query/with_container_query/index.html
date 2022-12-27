@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example - :is()</title>
+
+    <link href="global.css" rel="stylesheet" />
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        height: 100vh;
+        margin: 0;
+      }
+
+      nav {
+        background-color: gray;
+        padding: 16px;
+        box-sizing: border-box;
+        container-type: inline-size;
+      }
+
+      main {
+        padding: 16px;
+        container-type: inline-size;
+      }
+
+      .card {
+        display: grid;
+        background-color: #dbe0f4;
+        box-shadow: 0px 1px 4px #aaaaaa;
+        border-radius: 4px;
+        overflow: hidden;
+        max-width: 800px;
+      }
+
+      .card {
+        display: grid;
+        grid-template-rows: 240px;
+        grid-template-columns: 240px 1fr;
+      }
+      .card .content {
+        padding: 8px;
+      }
+      .card .avatar {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .card .name {
+        font-size: 28px;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .card .description {
+        font-size: 18px;
+        padding: 8px;
+      }
+
+      @container (max-width: 400px) {
+        .card {
+          display: grid;
+          grid-template-rows: 160px 1fr;
+          grid-template-columns: 1fr;
+        }
+        .card .content {
+          padding: 4px;
+        }
+        .card .name {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 4px;
+        }
+        .card .description {
+          font-size: 10px;
+          padding: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h4>SideBar</h4>
+      <div class="card">
+        <div>
+          <img class="avatar" src="./images/image.webp" />
+        </div>
+        <div class="content">
+          <div class="name">mugi_uno</div>
+          <div class="description">
+            Cybozu, Inc. <br />
+            Frontend Expert Team <br />
+            @mugi_uno <br />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h4>Main Contents</h4>
+      <div class="card">
+        <div>
+          <img class="avatar" src="./images/image.webp" />
+        </div>
+        <div class="content">
+          <div class="name">mugi_uno</div>
+          <div class="description">
+            Cybozu, Inc. <br />
+            Frontend Expert Team <br />
+            @mugi_uno <br />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "webdbpress-css-examples",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mugi-uno/webdbpress-css-examples.git"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.3"
+  }
+}

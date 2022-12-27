@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example - :has()</title>
+
+    <link href="global.css" rel="stylesheet" />
+    <style>
+      section {
+        background-color: #d3d3d3;
+        border-style: solid;
+        border-color: transparent;
+      }
+
+      section:has(input:focus) {
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <label>
+        <span>Name</span>
+        <input type="text" />
+      </label>
+      <label>
+        <span>E-Mail</span>
+        <input type="email" />
+      </label>
+    </section>
+
+    <section>
+      <label>
+        <span>Zip Code</span>
+        <input type="text" />
+      </label>
+      <label>
+        <span>Address</span>
+        <input type="text" />
+      </label>
+    </section>
+
+    <section>
+      <label>
+        <span>Note</span><br />
+        <textarea></textarea>
+      </label>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example - :where()</title>
+
+    <link href="global.css" rel="stylesheet" />
+
+    <style>
+      /** Base CSS */
+      :where(header, footer) a {
+        font-size: 12px;
+      }
+    </style>
+
+    <style>
+      /** Page CSS */
+      a {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <span>Header | </span>
+        <a href="#">Top</a>
+        <a href="#">Articles</a>
+        <a href="#">Search</a>
+      </header>
+      <main>
+        <span>Main | </span>
+        <a href="#">Article1</a>
+        <a href="#">Article2</a>
+        <a href="#">Article3</a>
+      </main>
+      <footer>
+        <span>Footer | </span>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+      </footer>
+    </div>
+  </body>
+</html>
